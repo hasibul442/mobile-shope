@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop</title>
+
+    <!-----Bootstrap CDN---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--------Owl Carousel--------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!------Fontawesome------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+
+    <!------Custom Css------------>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-------------Start Header---------------->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-rale font-size-20 text-black-50 m-0">Woruk-3610, Saharasti, Chandpur, Bangladesh, (+880)1770489990</p>
+            <div class="font-roboto font-size-14">
+               <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+               <a href="#" class="px-3 border-right border-left text-dark">Whishlist (0)</a>
+            </div>
+        </div>
+
+        <!----------Start Primary Nav--------------->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+            <a class="navbar-brand" href="#">Mobile Shope</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav m-auto font-rubik">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">On Sale</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Category<i class="fas fa-chevron-down"></i></a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Coming Soon</a>
+                  </li>
+              </ul>
+              <form action="" class="font-size-14 font-roboto">
+                  <a href="" class="py-2 rounded-pill color-primary-bg">
+                      <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                      <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                  </a>
+              </form>
+            </div>
+          </nav>
+          <!----------End Primary Nav--------------->
+
+    </header>
+    <!-------------End Header---------------->
+
+    <!-------------Start main---------------->
+    <main id="main-site">
+
+        <!------------Start Product---------------->
+        <section id="product" class="py-3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <img src="./assets/products/1.png" alt="Product" class="img-fluid">
+                        <div class="form-row pt-4 font-size-16 font-baloo">
+                            <div class="col">
+                                <button type="submit" class="btn btn-danger form-control">Process to Buy</button>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-warning form-control">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 py-5">
+                        <h5 class="font-baloo font-size-20">Samsung Galexy 10</h5>
+                        <small>by Samsung</small>
+                        <div class="d-flex">
+                            <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <a href="#" class="px-2 font-rale font-size-14">20,534 rating | 1000+ answered questions</a>
+                        </div>
+                        <hr class="m-0">
+
+                        <!--Product Price-->
+                        <table class="my-3">
+                            <tr class="font-rale font-size-14">
+                                <td>M.R.P</td>
+                                <td class="px-4"><strike>$163.00</strike></td>
+                            </tr>
+                            <tr class="font-rale font-size-14">
+                                <td>Deal Price</td>
+                                <td class="px-4 font-size-20 text-danger">$<samp>152.00</samp><small class="text-dark font-size-12">&nbsp;&nbsp;include of all taxes</small></td>
+                            </tr>
+                            <tr class="font-rale font-size-14">
+                                <td>You Save</td>
+                                <td class="px-4"><samp class="font-size-16 text-danger">$11.00</samp></td>
+                            </tr>
+                        </table>
+
+                        <!--Product Price-->
+
+                        <!------Policy-------->
+                        <div id="policy">
+                            <div class="d-flex">
+                                <div class="return text-center mr-5">
+                                    <div class="font-size-20 my-2 color-second">
+                                      <span class="fas fa-retweet border p-3 rounded-pill"></span>  
+                                    </div>
+                                    <a href="#" class="font-rale font-size-12">10 Days <br> Replacement</a>
+                                </div>
+
+                                <div class="return text-center mr-5">
+                                    <div class="font-size-20 my-2 color-second">
+                                      <span class="fas fa-truck border p-3 rounded-pill"></span>  
+                                    </div>
+                                    <a href="#" class="font-rale font-size-12">Daily Tuition <br>Delivered</a>
+                                </div>
+
+                                <div class="return text-center mr-5">
+                                    <div class="font-size-20 my-2 color-second">
+                                      <span class="fas fa-check-double border p-3 rounded-pill"></span>  
+                                    </div>
+                                    <a href="#" class="font-rale font-size-12">1 Year<br>Warranty</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!------!Policy-------->
+                        <hr>
+                        <!-------Order Details---->
+                        <div id="order-details" class="text-dark font-roboto d-flex flex-column">
+                            <small>Delivery by: Oct 10 - Oct 20</small>
+                            <small>Sold by <a href="#">Daily Electronics</a> (4.5 out of 5 | 18,888 ratings)</small>
+                            <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Deliver to Customer - 1207</small>
+                            
+                        </div>
+
+                        <!-------!Order Details---->
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!--color-->
+                                <div class="color my-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h6 class="font-baloo">Color:</h6>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="px-3 mx-1 color-yellow-bg"><button class="btn font-size-12"></button></div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="px-3 mx-1 bg-primary "><button class="btn font-size-12"></button></div>
+                                            </div>
+                                            <div class="col-2">
+                                                <div class="px-3 mx-1 bg-danger"><button  class="btn font-size-12"></button></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!--color-->
+                            </div>
+                            <!-----Product Quantity Section------->
+                            <div class="col-sm-6">
+                                <div class="qty d-flex my-3">
+                                    <h6 class="font-baloo">Qty:</h6>
+                                    <div class="px-4 d-flex font-rale">
+                                        <button class="qty-up bg-light boarder "><i class="fas fa-angle-up"></i></button>
+                                        <input type="text" class="qty-input border px-2 w-50 bg-light" disabled value="1" placeholder="1">
+                                        <button class="qty-down bg-light boarder "><i class="fas fa-angle-down"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-----Product Quantity Section------->
+                        </div>
+
+                        <!-----Size-->
+                        <div id="size" class="my-3">
+                            <h6 class="font-baloo">Size</h6>
+                            <div class="d-flex justify-content-between w-75">
+                                <div class="font-rubik border p-2 m-1">
+                                    <button class="btn p-0 font-size-14">4gb RAM</button>
+                                </div>
+                                <div class="font-rubik border p-2 m-1">
+                                    <button class="btn p-0 font-size-14 ">6gb RAM</button>
+                                </div>
+                                <div class="font-rubik border p-2 m-1">
+                                    <button class="btn p-0 font-size-14">8gb RAM</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-----!Size-->
+                    </div>
+
+                    <div class="col-sm-12">
+                        <h6 class="font-roboto">Product Description</h6>
+                        <hr>
+                        <p class="font-rale font-size-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolores sapiente aliquid veniam repellat reiciendis impedit, earum aspernatur at consequatur unde tenetur ipsa assumenda natus rem labore placeat doloribus omnis laudantium? Totam eaque blanditiis dolorem error iste iusto quas nihil repudiandae dolore, saepe numquam perferendis voluptatem dicta voluptate necessitatibus sit?</p>
+                        <p class="font-rale font-size-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, dolores sapiente aliquid veniam repellat reiciendis impedit, earum aspernatur at consequatur unde tenetur ipsa assumenda natus rem labore placeat doloribus omnis laudantium? Totam eaque blanditiis dolorem error iste iusto quas nihil repudiandae dolore, saepe numquam perferendis voluptatem dicta voluptate necessitatibus sit?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------End Product---------------->
+        
+
+        <!-------Start top sale--------->
+        <section id="top-sale">
+            <div class="container py-5">
+                <h4 class="font-rubik font-size-20">Top Sales</h4>
+                <hr>
+                <!------Start Owl Carousel-------->
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item py-2">
+                        <div class="product font-rale">
+                            <a href="#">
+                                <img src="./assets/products/1.png" alt="product" class="img-fluid">
+                            </a>
+                            <div class="text-center">
+                                <h6>Samsung Galaxy 10</h6>
+                                <div class="rating text-warning font-size-12">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="far fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$152</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item py-2">
+                      <div class="product font-rale">
+                          <a href="#">
+                              <img src="./assets/products/2.png" alt="product" class="img-fluid">
+                          </a>
+                          <div class="text-center">
+                              <h6>Real Me C11</h6>
+                              <div class="rating text-warning font-size-12">
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="fas fa-star"></i></span>
+                                  <span><i class="far fa-star"></i></span>
+                              </div>
+                              <div class="price py-2">
+                                  <span>$152</span>
+                              </div>
+                              <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                          </div>
+                      </div>
+                    </div>
+
+                  <div class="item py-2">
+                    <div class="product font-rale">
+                        <a href="#">
+                            <img src="./assets/products/3.png" alt="product" class="img-fluid">
+                        </a>
+                        <div class="text-center">
+                            <h6>Samsung Galaxy 10</h6>
+                            <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="far fa-star"></i></span>
+                            </div>
+                            <div class="price py-2">
+                                <span>$152</span>
+                            </div>
+                            <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="item py-2">
+                  <div class="product font-rale">
+                      <a href="#">
+                          <img src="./assets/products/4.png" alt="product" class="img-fluid">
+                      </a>
+                      <div class="text-center">
+                          <h6>Real Me C11</h6>
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="far fa-star"></i></span>
+                          </div>
+                          <div class="price py-2">
+                              <span>$152</span>
+                          </div>
+                          <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
+                      </div>
+                  </div>
+                  </div>
+
+                  
+                </div>
+                <!------End Owl Carousel-------->
+
+            </div>
+        </section>
+        <!-------End  top sale--------->
+
+
+        
+
+    </main>
+    <!-------------End main---------------->
+
+    <!-------------Start footer---------------->
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <h4 class="font-rubik font-size-20">Mobile Shope</h4>
+            <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nihil tempora mollitia quod, cum optio facere cupiditate, eveniet consequatur esse tenetur. Sequi molestias numquam nobis laboriosam doloribus praesentium non atque.</p>
+          </div>
+
+          <div class="col-lg-4 col-12" >
+            <h4 class="font-rubik font-size-20">Newsletter</h4>
+            <form class="form-row">
+              <div class="col">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Information</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Term & Condition</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-12">
+            <h4 class="font-rubik font-size-20">Account</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newsletter</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+      <p class="font-rale">&copy;Copyrights 2020 By<a href="#" class="color-second"></a>Mohammad Hasibul Hasan</p>
+
+    </div>
+    <!-------------End footer---------------->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

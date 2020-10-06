@@ -65,4 +65,27 @@ $(document).ready(function(){
         }
     });
 
+    //Product qty section
+    let $qty_up = $(".qty-up");
+    let $qty_down = $(".qty-down");
+    let $input =$(".qty .qty-input");
+
+    //Click qty up button
+    $qty_up.click(function(e){
+        if($input.val()>=1 && $input.val()<=10){
+            $input.val(function(i, oldval){
+                return ++oldval;
+            });
+        }
+    });
+    //Click qty down button
+    $qty_down.click(function(e){
+        if($input.val()>1 && $input.val()<=11){
+            $input.val(function(i, oldval){
+                return --oldval;
+            });
+        }
+    });
+
+
 });
