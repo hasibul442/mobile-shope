@@ -1,9 +1,9 @@
-<?php
-//------include header File
-    include ('header.php');
-?>
 
 <?php
+    //------start include header File
+    include ('header.php');
+    //------End include header File
+
     // start Include Banner-Area
     include ('php/_banner-area.php');
     // End Include Banner-Area
@@ -27,15 +27,15 @@
     // start Blogs
     include ('php/_blog.php');
     // End  Blogs
+
+    //------ start include Footer File
+    include ('footer.php');
+    //------ End include Footer File
 ?>
 
 
 
-<?php
 
-//------include Footer File
-    include ('footer.php')
-?>
 
 
 
