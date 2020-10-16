@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    
+    <!-----Bootstrap CDN---------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <div class="row">
+      <div class="col-2">
+        <div class="left_area">
+          <h3>Mobile <span>Shope</span></h3>
+        </div>
+      </div>
+      <div class="col-6">
+        <label for="check">
+          <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+      </div>
+      <div class="col-4">
+        <div class="right_area float-right">
+          <a href="#" class="logout_btn">Logout</a>
+        </div>
+      </div>    
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="./assets/1.jpg" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="index.html"><i class="fab fa-accusoft"></i><span>Dashboard</span></a>
+        <a href="products.html"><i class="fas fa-mobile-alt"></i><span>Products</span></a>
+        <a href="#"><i class="fab fa-sellcast"></i><span>Order</span></a>
+        <a href="#"><i class="fas fa-users"></i><span>User</span></a>
+        <a href="#"><i class="fas fa-th-list"></i><span>About</span></a>
+        <a href="#"><i class="far fa-images"></i><span>Banner</span></a>
+        <a href="#"><i class="fas fa-blog"></i><span>Blogs</span></a>
+        <a href="#"><i class="fas fa-ad"></i><span>Adds</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Settings</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="./assets/1.jpg" class="profile_image" alt="">
+        <h4>Hasibul Hasan</h4>
+      </div>
+        <a href="index.html"><i class="fab fa-accusoft"></i><span>Dashboard</span></a>
+        <a href="products.html"><i class="fas fa-mobile-alt"></i><span>Products</span></a>
+        <a href="#"><i class="fab fa-sellcast"></i><span>Order</span></a>
+        <a href="#"><i class="fas fa-users"></i><span>User</span></a>
+        <a href="#"><i class="fas fa-th-list"></i><span>About</span></a>
+        <a href="#"><i class="far fa-images"></i><span>Banner</span></a>
+        <a href="#"><i class="fas fa-blog"></i><span>Blogs</span></a>
+        <a href="#"><i class="fas fa-ad"></i><span>Adds</span></a>
+        <a href="#"><i class="fas fa-cogs"></i><span>Settings</span></a>
+    </div>
+    <!--sidebar end-->
+
+   
+    <div class="content">
+      <div class="row">
+
+        <div class="col-sm-4 mt-2">
+          <div class="card">
+            <div class="card-body" id="block1">
+              <h4 class="text-center font-weight-bold">Product</h4>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="text-center" id="block-img">
+                    <img src="./assets/blocks/product.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-center" id="item">Product Left<br><samp class="font-weight-bold" >2034</samp></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-2">
+          <div class="card">
+            <div class="card-body " id="block2">
+              <h4 class="text-center font-weight-bold">Purchases</h4>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="text-center" id="block-img">
+                    <img src="./assets/blocks/purchases.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-center" id="item">Purchases Item<br><samp class="font-weight-bold" >123</samp></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-2">
+          <div class="card">
+            <div class="card-body"id="block3">
+              <h4 class="text-center font-weight-bold">User</h4>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="text-center" id="block-img">
+                    <img src="./assets/blocks/user.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-center" id="item">Active Users<br><samp class="font-weight-bold" >327</samp></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-2">
+          <div class="card">
+            <div class="card-body" id="block4">
+              <h4 class="text-center font-weight-bold">Cost</h4>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="text-center" id="block-img">
+                    <img src="./assets/blocks/cost.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-center" id="item">Total (tk)<br><samp class="font-weight-bold" >376372.00</samp></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-2">
+          <div class="card">
+            <div class="card-body"id="block5">
+              <h4 class="text-center font-weight-bold">Earn</h4>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="text-center" id="block-img">
+                    <img src="./assets/blocks/earn.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-center" id="item">Total (tk)<br><samp class="font-weight-bold" >232034.00</samp></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mt-2">
+          <div class="card">
+            <div class="card-body"id="block6">
+              <h4 class="text-center font-weight-bold">Profit</h4>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <div class="text-center" id="block-img">
+                    <img src="./assets/blocks/profit.png" class="img-fluid " alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <p class="text-center" id="item">Total (tk)<br><samp class="font-weight-bold" >332232.00</samp></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.nav_btn').click(function(){
+          $('.mobile_nav_items').toggleClass('active');
+        });
+      });
+      </script>
+
+
+
+  </body>
+</html>
+                           

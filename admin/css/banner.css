@@ -1,0 +1,17 @@
+.card{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-body{
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
+samp{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

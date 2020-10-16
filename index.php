@@ -21,7 +21,7 @@
     // End  Banner Adds
 
     // start New Phones
-    include ('php/_banner-adds.php');
+    include ('php/_new-phones.php');
     // End  New Phones
 
     // start Blogs

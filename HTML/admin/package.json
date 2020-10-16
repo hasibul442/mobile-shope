@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass ./HTML/sass/style.scss ./HTML/style.css --watch"
+    "start": "sass ./HTML/admin/sass/style.scss ./HTML/admin/style.css --watch"
   },
   "author": "Mohammad Hasibul Hasan",
   "license": "ISC"
