@@ -8,6 +8,7 @@
     }
     .dashboard-card-body{
     border-radius: 10px;
+    background-color: transparent;
     }
     .dashboard-card #block1{
     background: #f857a6;  /* fallback for old browsers */

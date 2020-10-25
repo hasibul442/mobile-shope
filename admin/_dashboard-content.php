@@ -2,8 +2,8 @@
       <div class="row">
 
         <div class="col-sm-4 mt-2">
-          <div class="card dashboard-card">
-            <div class="card-body dashboard-card-body" id="block1">
+          <div class="card dashboard-card border-0">
+            <div class="card-body dashboard-card-body border-0" id="block1">
               <h4 class="text-center font-weight-bold">Product</h4>
               <div class="row">
                 <div class="col-md-6 col-12">

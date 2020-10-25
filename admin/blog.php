@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Banner Setting</title>
 
-        
+
         <!-----Bootstrap CDN---------->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
@@ -16,16 +16,16 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.6/css/rowReorder.dataTables.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
         
-        <link rel="stylesheet" href="banner.css">
         <link rel="stylesheet" href="header.css">
-        
-        
+        <link rel="stylesheet" href="blog.css">
+
+
 </head>
 
 <body>
         <?php
         include('_nav-bar-header.php');
-        include('_banner-content.php');
+        include('_blog-content.php');
         ?>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -53,6 +53,7 @@
                         });
                 });
         </script>
+
 
 
 

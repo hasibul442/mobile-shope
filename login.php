@@ -1,24 +1,3 @@
-<?php
-session_start();
-  if(isset($_POST['login'])){
-    if(empty($_POST['email'])||empty($_POST['password'])){
-      header("location:login.php?Empty='Please Enter Valid Info'");
-    }
-    else{
-      $sql="SELECT * FROM admin email='".$_POST['email']." and password=".$_POST['password']."'";
-      $result= mysqli_query($conn,$sql);
-
-      if(mysqli_fetch_assoc($result)){
-        $_SESSION['email']=$_POST['email'];
-        header("location:index.php");
-      }
-      else{
-        header("location:login.php?invalid='Please Enter Valid Info'");
-      }
-    }
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,38 +26,18 @@ session_start();
           <div class="card">
             <div class="card-body">
               <h3 class="card-title text-center pb-3">Log In</h3>
-
-              <?php
-              if(@$_GET['Empty']==true){
-
-              
-              ?>
-                <script>window.alert("Please Enter Email and Password");</script>
-              <?php
-              }
-              ?>
-
-<?php
-              if(@$_GET['invalid']==true){
-
-              
-              ?>
-                <script>window.alert("Please Enter Email and Password");</script>
-              <?php
-              }
-              ?>
               
               <form method="POST" action="">
                 <div class="form-group row">
                   <label for="inputemail" class="col-sm-4 col-form-label"><i class="fas fa-envelope"></i> Email</label>
                   <div class="col-sm-8">
-                    <input type="email" class="form-control" id="inputemail" name="email" placeholder="example123@gmail.com" require>
+                    <input type="email" class="form-control" id="inputemail" placeholder="example123@gmail.com" required>
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputPassword" class="col-sm-4 col-form-label"><i class="fas fa-key"></i> Password</label>
                   <div class="col-sm-8">
-                    <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Password" require>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
                   </div>
                 </div>
                 <div class="form-check text-center">
@@ -90,6 +49,9 @@ session_start();
                 </div>
                 <div class="text-center pt-3">
                   <input class="btn btn-primary" name="login" type="submit" value="Log In">
+                </div>
+                <div class="text-center pt-3">
+                  <p>New Here <a href="reg.php">Create account</a> </p>
                 </div>
               </form>
             </div>
