@@ -9,13 +9,16 @@ if (isset($_POST['upload'])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
   $conf_password = $_POST['conf_password'];
+  $image = $_FILES['file']['name'];
+  $path = '../assets/user/' . $image;
 
   // Select file type
 
-    $sql_add = "INSERT INTO user(f_name,l_name,username,email,password1,con_password) values('$f_name','$l_name','$user_name','$email','$password','$conf_password')";
+    $sql_add = "INSERT INTO user(f_name,l_name,username,email,password1,con_password,profile_image) values('$f_name','$l_name','$user_name','$email','$password','$conf_password','$path')";
 
     // Valid file extensions
     if (mysqli_query($conn, $sql_add)) {
+      move_uploaded_file($_FILES['file']['tmp_name'], $path);
       echo '<script>alert("Uploaded")</script>';
       header("location:login.php");
     } else {
@@ -54,7 +57,7 @@ if (isset($_POST['upload'])) {
             <div class="card-body">
               <h3 class="card-title text-center pb-3">Create Account</h3>
               
-              <form method="POST" action="reg.php">
+              <form method="post" enctype="multipart/form-data">
                 <div class="form-group row">
                   <label for="f_name" class="col-sm-4 col-form-label">First Name</label>
                   <div class="col-sm-8">
@@ -97,13 +100,13 @@ if (isset($_POST['upload'])) {
                   </div>
                 </div>
 
-              <!--  <div class="form-group row">
+                <div class="form-group row">
                   <label for="file" class="col-sm-4 col-form-label">Image</label>
                   <div class="col-sm-8">
                     <input type="file" name="file" class="form-control-file" id="file">
                   </div>
                 </div>
--->
+
                 <div class="text-center pt-3">
                   <input class="btn btn-primary" name="upload" type="submit" value="Create Account">
                 </div>

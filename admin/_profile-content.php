@@ -2,15 +2,15 @@
 include("dbconnection.php");
 
 //---------Delete blog----------------
-if (isset($_GET['del-id'])) {
-  $idd = $_GET['del-id'];
-  $selectSql = "SELECT userid,image_path FROM user where userid = '$idd'";
+if (isset($_GET['del_id'])) {
+  $idd = $_GET['del_id'];
+  $selectSql = "SELECT userid,profile_image FROM user where userid = '$idd'";
   $rsSelect = mysqli_query($conn, $selectSql);
   $getRow = mysqli_fetch_assoc($rsSelect);
 
-  $getIamgeName = $getRow['image_path'];
+  $getIamgeName = $getRow['profile_image'];
 
-  $createDeletePath = $_SERVER['DOCUMENT_ROOT'] . "/mobile-shope/assets/blog/" . $getIamgeName;
+  $createDeletePath = $_SERVER['DOCUMENT_ROOT'] . "./assets/user/" . $getIamgeName;
 
   if (($createDeletePath!=null)) {
     $deleteSql = "DELETE from user where userid = " . $getRow['userid'];
@@ -83,7 +83,7 @@ if (isset($_GET['del-id'])) {
                 <td>
                   <a href="#"><i class="fas fa-eye"></i></a>
                   <a href="_blog-edit.php?id=<?php echo $rows["userid"] ?>"><i class="fas fa-pencil-alt"></i></a>
-                  <a href="?del-id=<?php echo $rows["userid"] ?>"><i class="fas fa-trash-alt text-danger"></i></a>
+                  <a href="?del_id=<?php echo $rows["userid"] ?>"><i class="fas fa-trash-alt text-danger"></i></a>
                 </td>
               </tr>
             <?php
