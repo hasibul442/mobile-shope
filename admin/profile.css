@@ -1,44 +1,7 @@
+.file-field.big .file-path-wrapper {
+    height: 3.2rem;
+}
 
-span{
-    font-weight: 500;
-}
-thead{
-    text-align:center; 
-    color:#ffffff; 
-    background-color:#00b4d8;
-}
-tbody{
-    background-color:#caf0f8;
-}
-.content .nav-item{
-    border: none;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 500;
- 
-    
-  }
-  .content .nav-item:hover{
-    color: #ffffff;
-    transition: 0.5s;
-    background-color:#000000;
-  }
-.nav-tabs{
-    background-color:#4cc9f0;
-    border-radius: 5px 0 5px 0;
-}
-.edit{
-    background-color: transparent;
-    border: none;
-    border-radius: 10px;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.edit-body{
-    background-color:#80ffdb;
-    border: none;
-    border-radius: 10px;
-}
-.edit-body label{
-    font-weight: bold;
+.file-field.big .file-path-wrapper .file-path {
+    height: 3rem;
 }

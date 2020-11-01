@@ -19,6 +19,7 @@
 
 
         <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="profile.css">
 
 </head>
 

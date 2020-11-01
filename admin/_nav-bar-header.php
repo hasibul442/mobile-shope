@@ -16,7 +16,7 @@
       <div class="right_area float-right">
         <ul>
           <li><a href="#"><i class="fas fa-bell"></i></a></li>
-          <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+          <li><a href="login.php"><i class="fas fa-power-off"></i></a></li>
         </ul>
       </div>
     </div>
